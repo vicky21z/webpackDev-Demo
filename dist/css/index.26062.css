@@ -1,0 +1,12 @@
+ul li {
+    list-style: none;
+}
+
+div {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    background: pink;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY3NzL2luZGV4LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLEMiLCJmaWxlIjoiY3NzL2luZGV4LjI2MDYyLmNzcyIsInNvdXJjZXNDb250ZW50IjpbInVsIGxpIHtcclxuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbn1cclxuXHJcbmRpdiB7XHJcbiAgICB3aWR0aDogNTAwcHg7XHJcbiAgICBoZWlnaHQ6IDUwMHB4O1xyXG4gICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XHJcbiAgICBiYWNrZ3JvdW5kOiBwaW5rO1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ==*/

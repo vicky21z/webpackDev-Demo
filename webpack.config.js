@@ -5,19 +5,21 @@ const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 
 
 module.exports = {
+    mode: "development",
     entry : path.join(__dirname, "./src/main.js"),
     output: {
         path: path.join(__dirname, "./dist"),
-        filename: "bundle.[hash:5].js"
+        filename: "js/bundle.[hash:5].js"
     },
+    devtool: "inline-source-map",
     plugins: [
-        new CleanWebpackPlugin(),
+        // new CleanWebpackPlugin(),
         new HTMLWebpackPlugin({
             template: path.join(__dirname, "./src/index.html"),
             filename: "index.[hash:5].html"
         }),
         new MiniCSSExtractPlugin({
-            filename: "index.[hash:5].css"
+            filename: "css/index.[hash:5].css",
         })
     ],
     module: {
