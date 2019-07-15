@@ -1,0 +1,10 @@
+ul li {
+    list-style: none;
+}
+
+div {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    background: pink;
+}
