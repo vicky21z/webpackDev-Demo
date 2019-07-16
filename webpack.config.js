@@ -13,7 +13,7 @@ module.exports = {
     },
     devtool: "inline-source-map",
     plugins: [
-        // new CleanWebpackPlugin(),
+        new CleanWebpackPlugin(),
         new HTMLWebpackPlugin({
             template: path.join(__dirname, "./src/index.html"),
             filename: "index.[hash:5].html"
@@ -30,7 +30,23 @@ module.exports = {
                     publicPath: "../"
                 }
             }, 
-            "css-loader"]}
+            "css-loader"]},
+            {test: /\.js$/, use: "babel-loader", exclude: /node_modules/},
+            {test: /\.(png|jpg|bmp|gif)$/, use:"url-loader?limit=10000&name=images/[name].[hash]-[name].[ext]"},
+
         ]
+    },
+    optimization: {
+        splitChunks: {
+            chunks: "all",
+            cacheGroups: {
+                lib: {
+                    name: "jquery",
+                    test: /[\\]node_modules[\\]/,
+                    priority: 10,
+                    chunks: "initial"
+                }
+            }
+        }
     }
 }
